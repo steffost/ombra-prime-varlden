@@ -7,8 +7,10 @@
 <title>Ombra Prime</title>
 <meta name="description" content="Ett diskusformat moderskepp, 16,9 kilometer brett, med hundra tusen människor i tredje generationen ombord. Världen, kort förklarad.">
 <meta property="og:title" content="Ombra Prime">
-<meta property="og:description" content="Hundra tusen människor i tredje generationen ombord. Ingen av dem har valt det, och det finns ingenstans att åka.">
+<meta property="og:description" content="Hundra tusen människor i tredje generationen ombord, på väg för att blåsa liv i döda världar. Ingen av dem har valt det.">
 <meta property="og:image" content="ombra-prime.jpg">
+<link rel="alternate" hreflang="sv" href="https://ombraprime.com/ombra-prime-varlden/">
+<link rel="alternate" hreflang="en" href="https://ombraprime.com/ombra-prime-world/">
 <style>
 /* ---------------------------------------------------------------
    En enda värld, ett enda tema. Sidan ÄR rymden utanför skrovet,
@@ -129,7 +131,7 @@ p{margin:0 0 1.1rem}
 .eftertext{margin-top:1.7rem;font-size:.94rem;color:var(--dampad)}
 
 /* ---------------- sektorerna ----------------
-   Numren är inte dekor. Sektorerna HAR en kanonisk ordning 01–07
+   Numren är inte dekor. Sektorerna HAR en kanonisk ordning 01–08
    i lagtexten, och den ordningen är information. */
 ol.sektorer{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--kant)}
 ol.sektorer li{
@@ -190,20 +192,26 @@ footer{
 }
 footer p{margin:0}
 footer a{color:var(--barnsten)}
+
+/* ---------------- språkväxeln ---------------- */
+.sprak{position:absolute;top:1rem;right:1.25rem;z-index:2;font-size:.72rem;letter-spacing:.16em}
+.sprak a{color:var(--glod);text-decoration:none;padding:.35rem .7rem;border:1px solid rgba(255,206,138,.45);border-radius:2px;background:rgba(14,9,4,.55)}
+.sprak a:hover,.sprak a:focus-visible{background:var(--barnsten);color:var(--rymd)}
 </style>
 </head>
 <body>
 
 <header class="hjalte">
+  <nav class="sprak tek" aria-label="Språk"><a href="https://ombraprime.com/ombra-prime-world/" hreflang="en" lang="en">English</a></nav>
   <img src="ombra-prime.jpg" width="2000" height="1116"
        alt="Ombra Prime — ett vitt, diskusformat moderskepp med en glaskupol på ovansidan och ett spetsigt torn i fören, mot en orange nebulosa.">
 </header>
 
 <div class="ingress spann">
   <p class="liten tek">Moderskeppet</p>
-  <p>Ett diskusformat skepp, sexton och en halv kilometer brett. Hundra tusen
-     människor i tredje generationen ombord. Ingen av dem har valt det, och
-     det finns ingenstans att åka.</p>
+  <p>Ett diskusformat skepp, nästan sjutton kilometer brett. Hundra tusen
+     människor i tredje generationen ombord, på väg för att blåsa liv i döda
+     världar. Ingen av dem har valt det.</p>
   <a class="knapp tek" href="https://ombraprime.com/ombra-prime/simulator.html">
     Så byggs världen <span class="pil">&rarr;</span></a>
 </div>
@@ -222,7 +230,14 @@ footer a{color:var(--barnsten)}
     <p>Ombra Prime lämnade jorden för länge sedan. De flesta som lever ombord
        nu har aldrig sett en planet — Jorden är något deras far- och
        morföräldrar berättade om. Det finns ingen kontakt utifrån, inga
-       besökare och inga nyheter från någon annanstans.</p>
+       besökare och inga nyheter från någon annanstans. Ingen kan lämna
+       skeppet.</p>
+    <p>Men skeppet är på väg någonstans, för att göra något. Ombra Prime är
+       det första i sitt slag: ett moderskepp som bär <b>The Breather</b>,
+       tekniken som får döda världar att leva. Skeppet sprider syntetisk
+       atmosfär och startar ekosystem på planeter som saknar båda. Under
+       kupolen i The Pearl växer det som ska planteras där — träd, gräs, djur
+       och arter som gjorts för att klara främmande jord.</p>
     <p>Skeppet är enormt, gammalt och i grunden vänligt. Skrovet är delvis
        levande och läker sig självt, långsamt. Dagsljuset under kupolen är en
        konvention, inte en naturlag. Det som skaver är inte fara utan
@@ -236,7 +251,7 @@ footer a{color:var(--barnsten)}
 
 <section class="tonad">
   <div class="brett">
-    <h2>Sju sektorer</h2>
+    <h2>Åtta sektorer</h2>
     <p class="underrad tek">Uppifrån och ner, framifrån och bak</p>
     <ol class="sektorer">
       <li><span class="nr tek">01</span><h3>The Pearl</h3>
@@ -253,6 +268,9 @@ footer a{color:var(--barnsten)}
         <p>Industri, och Oris domän. Katedralen ligger här nere.</p></li>
       <li><span class="nr tek">07</span><h3>The Spire</h3>
         <p>Hemlig forskning, under Mr. Splendid.</p></li>
+      <li><span class="nr tek">08</span><h3>The Breather</h3>
+        <p>Terraformingsmotorn, och Hjärtkammaren där The Eternal Dreamers
+           sover. Skeppets syfte — maskinen skeppet byggdes runt.</p></li>
     </ol>
     <div class="vev">
       <h3>Root Weave — »The Gut«</h3>
@@ -363,9 +381,33 @@ footer a{color:var(--barnsten)}
           löst troende.</li>
       <li><b>Rox News</b> är den enda breda nyhetskanalen. Mara Rox är känd
           av alla.</li>
-      <li><b>Ombra Prime Radio</b> sänder från Metropolis. Lisa Lusis pratar,
-          folk ringer in, och någon läser upp ett kapitel ur romanen.</li>
+      <li><b>Ombra Prime Radio</b> sänder från Metropolis. Lisa Lusis berättar
+          nyheterna med egna ord och tar emot samtal från folk på nattskiftet.
+          Anselm Rask läser senaste kapitlet ur romanen, Sister Haldis Vrenn
+          håller en vers ur Sporernas Krönika mot hur skeppet känts, och Ivo
+          Brekke räknar det som <em>inte</em> sades.</li>
+      <li><b>Hitlistan</b> följer livet ombord. Låtarna skrivs av folk som bor
+          här, och det som händer på skeppet avgör vilka som klättrar.</li>
     </ul>
+  </div>
+</section>
+
+<section class="tonad">
+  <div class="spann">
+    <h2>Följ världen</h2>
+    <p class="underrad tek">Live, medan den skrivs</p>
+    <ul class="streck">
+      <li><b>Ombra Prime Radio</b> sänds live på YouTube. Varje program tar
+          det senaste som hänt ombord, och ett nytt görs först när det finns
+          nytt att berätta. Oris finns i chatten.</li>
+      <li><b>Hitlistan</b> spelas i sändningen, med låtarna som världen röstat
+          fram.</li>
+      <li><b>Rox News</b> med Mara Rox kommer, med nyheterna från skeppet
+          varje dag.</li>
+      <li><b>En podd</b> som går igenom veckan ombord kommer också.</li>
+    </ul>
+    <p class="eftertext"><a class="knapp tek" href="https://www.youtube.com/@ombraprime">
+      YouTube · Ombra Prime <span class="pil">&rarr;</span></a></p>
   </div>
 </section>
 
